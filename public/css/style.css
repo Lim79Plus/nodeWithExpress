@@ -1,3 +1,31 @@
 body{
-    color: purple;
+    background: #f79d00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body{
+    color: forestgreen;
+}
+.container{
+    width:360px;
+    margin: 50px auto;
+    background:transparent;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+.container:first-of-type{
+    margin-top: 100px;
+}
+
+.container:last-of-type{
+    margin-bottom: 100px;
+}
+
+.container h1{
+    text-align: center
+}
+
+.txt-center{
+    text-align: center;
 }
