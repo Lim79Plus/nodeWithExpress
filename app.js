@@ -11,6 +11,15 @@ app.get("/fallinglovewith/:animal",function(req, res) {
     res.render("love.ejs",{animalVar: animal});
 });
 
+app.get("/posts",function(req, res) {
+    var posts = [
+        {title: "Post 01", auther :"Susy"},
+        {title: "Post 02", auther :"MAX"},
+        {title: "Post 03", auther :"Jone"}
+    ];
+    res.render("post.ejs", {posts: posts});
+});
+
 app.listen(3000, function() {
     console.log("Server is Listening!!");
 });
